@@ -101,6 +101,15 @@
             width: 100%;
             font-size: 8px;
             padding-bottom: 10px;
+
+            li {
+                display: none;
+            }
+            li:first-child {
+                display: block;
+                margin-right: 0px;
+        
+            }
     
         }
 
@@ -384,16 +393,11 @@
         
             }
             @media (max-width: 760px){
-                position: absolute;
-                background-color: #5c5b5b;
-                
-                padding-left: 10px;
-                margin-top: 1%;
-                margin-left: 55%;
-                z-index: 3;
+                display: none;
         
             }
             @media (max-width: 480px){
+                display: none;
                 
              
         
@@ -565,16 +569,16 @@
 
     }
     @media (max-width: 760px){
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         margin-top: 5%;
         left: 30%;
         
 
     }
     @media (max-width: 480px){
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
        
 
     }
@@ -601,13 +605,13 @@
     
         }
         @media (max-width: 760px){
-            width: 198px;
-            height: 198px;
+            width: 148px;
+            height: 148px;
     
         }
         @media (max-width: 480px){
-            width: 148px;
-            height: 148px;
+            width: 118px;
+            height: 118px;
     
         }
 
@@ -724,12 +728,12 @@
             
                 }
                 @media (max-width: 760px){
-                    margin-left: -66px;
+                    display: none;
             
             
                 }
                 @media (max-width: 480px){
-                    margin-left: -66px;
+                    display: none;
             
             
                 }
@@ -756,12 +760,12 @@
             
                 }
                 @media (max-width: 760px){
-                    margin-left: 66px;
+                    display: none;
             
             
                 }
                 @media (max-width: 480px){
-                    margin-left: 66px;
+                    display: none;
             
             
                 }
@@ -853,20 +857,19 @@
         
             }
             @media (max-width: 760px){
-                margin-top: 52%;
+                margin-top: 48%;
                 left: 35%;
                 height: 40px;
-                width: 150px;
+                width: 100px;
                 font-size: 15px;
                
         
             }
             @media (max-width: 480px){
                 height: 30px;
-                width: 100px;
+                width: 80px;
                 font-size: 10px;
-             
-        
+
             }
 
 
