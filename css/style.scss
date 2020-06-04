@@ -1284,7 +1284,7 @@ hr{
         position: relative;
 
         @media (max-width: 760px){
-            
+            margin: 0 auto;
     
         }
         
@@ -1379,6 +1379,10 @@ hr{
             top: 82%;
 
             &:active{
+                border-bottom: 60px solid #f0975c;
+
+            }
+            &:hover{
                 border-bottom: 60px solid #f0975c;
 
             }
