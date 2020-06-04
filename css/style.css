@@ -173,6 +173,13 @@ table {
     font-size: 10px;
     padding-bottom: 10px;
   }
+  .small-header .head-menu li {
+    display: none;
+  }
+  .small-header .head-menu li:first-child {
+    display: block;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 480px) {
