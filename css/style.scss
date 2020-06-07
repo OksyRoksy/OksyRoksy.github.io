@@ -178,13 +178,13 @@ a{
 
     }
     @media (max-width: 760px){
-        padding-top: 10px;
-            padding-bottom: 10px;  
+        padding-top: -30px;
+        padding-bottom: -30px;   
 
     }
     @media (max-width: 480px){
-        padding-top: 10px;
-        padding-bottom: 10px;  
+        padding-top: -30px;
+        padding-bottom: -30px;  
 
     }
 
@@ -192,14 +192,20 @@ a{
         @include flexbox;
         @include justify-content(space-between);
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: -40px;
 
         @media (max-width: 1290px){
+            margin-top: 10px;
+            margin-bottom: -10px;
             
         }
         @media (max-width: 960px){
             @include flexbox;
         @include justify-content(space-between);
         align-items: center;
+        margin-top: -10px;
+        margin-bottom: -20px;
             
     
         }
@@ -207,12 +213,15 @@ a{
             @include flexbox;
             @include justify-content(space-between);
             align-items: center;
+            margin-top: -20px;
+            margin-bottom: -20px;
     
         }
         @media (max-width: 480px){
             @include flexbox;
         @include justify-content(space-around);
         align-items: center;
+        margin-top: -20px;
     
         }
 
@@ -411,635 +420,401 @@ a{
     }
 }
 
-.big_banner {
-    margin: 0 auto;
-    background-image: url(../images/baner.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
+.main-baner{
+    background-image: url(../images/baner.jpg);
     background-size: 100%;
-   
-    width: 100%;
-    @media (max-width: 360px){
-        width: 370px;
-        
-
-    }
-
-    /*@media (max-width: 1290px){
-       
-        max-height: 520px;
-       
-        
-        
-
-    }
-    @media (max-width: 960px){
-        
-        max-height:400px;
-      
-      
-
-    }
-    @media (max-width: 760px){
-        
-        max-height: 300px;
-        
+    display: block;
+    margin: 0 auto;
+    background-position: center;
      
-       
+        background-repeat: no-repeat;
+        height: 849px;
 
-    }
-    @media (max-width: 480px){
-       
-        max-height: 200px;
+
        
     
-    }*/
-
-
-
-
-
-
-
-    .l_slider {
-        display: none;
-        position: absolute;
-        text-decoration: none;
-        font-size: 50px;
-        color: white;
-        top: 480px;
-        left: -2px;
-        box-shadow: 0 20px 20px -20px #333;
-        text-shadow:2px 2px 4px rgb(61, 58, 58);
-
         @media (max-width: 1290px){
-            display: none;
+           
+            max-height: 600px;
+ 
     
         }
         @media (max-width: 960px){
-            display: none;
-    
-        }
-        @media (max-width: 760px){
-            display: none;
-    
-        }
-        @media (max-width: 480px){
-            display: none;
-    
-        }
-
-
-    }
-
-    .r_slider{
-        display: none;
-        position: absolute;
-        text-decoration: none;
-        font-size: 50px;
-        color: white;
-        top: 480px;
-        right: 10px;
-        box-shadow: 0 20px 20px -20px #333;
-        text-shadow:2px 2px 4px rgb(73, 66, 66);
-
-        @media (max-width: 1290px){
-            display: none;
-    
-        }
-        @media (max-width: 960px){
-            display: none;
-    
-        }
-        @media (max-width: 760px){
-            display: none;
-    
-        }
-        @media (max-width: 480px){
-            display: none;
-    
-        }
-    }
-
-    .banner{
-        position: relative;
-
-        
-       /* @include flexbox;
-        @include flex-direction(column);
-            @include justify-content(center);
-            @include align-items(center);*/
-
-        @media (max-width: 1290px){
-            height: auto;
             
-            
-    
-        }
-        @media (max-width: 960px){
-            height: auto;
+            max-height:506px;
+          
           
     
         }
         @media (max-width: 760px){
-            height: auto;
+            
+            max-height: 330px;
+            
          
            
     
         }
         @media (max-width: 480px){
-            height: auto;
+           
+            max-height: 218px;
+           
+        
+        }
+        @media (max-width: 360px){
+           
+            max-height: 160px;
+           
         
         }
 
+        
+    
 
-    &:after{
-        content: "";
+
+
+
+
+
+    .baner{
+        @include flexbox;
+        @include flex-direction(column);
+        @include align-items(center);
+        margin: 0 auto;
+       
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+
+
+
+
+
+        .triangle{
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 65px 197.5px 0 197.5px;
         border-color: #ffffff transparent transparent transparent;
-        position: absolute;
-        left: 33%;
-        top: 0px;
-
-        @media (max-width: 960px){
-            left: 25%;
-    
-        }
-        @media (max-width: 760px){
-            display: none;
-            left: 30%;
-    
-        }
-    }
-    
-}
-    
-}
-
-
-.sale_information{
-        @include flexbox;
-        @include justify-content(center);
        
-        @include align-items(center);
+        margin-top: 20;
+        display: none;
+
+       
+
+        }
+
+        
+     .main-information{
+        @include flexbox;
         @include flex-direction(column);
-        padding-top: 100px;
-      
-        margin: 0 auto;
-
-        @media (max-width: 1290px){
-            padding-top: 80px;
-           /* max-height: 550px;*/
-           
-            
-            
-    
-        }
-        @media (max-width: 960px){
-            padding-top: 30px;
-         
-           /* max-height: 400px;*/
-          
-          
-    
-        }
-        @media (max-width: 760px){
-            padding-top: 30px;
-         
-          /*  max-height: 220px;*/
-            
-         
-           
-    
-        }
-        @media (max-width: 480px){
-            padding-top: 30px;
-           
-           /* max-height: 70px;*/
-           
-        
-        }
-
-
-
-    .sale{
-
-        @include flexbox;
-        @include justify-content(center);
         @include align-items(center);
-       
-
-        margin: 0 auto;
-        
-    
-        width: 275px;
-        height: 275px;
-        border: 3px solid white;
-         /*position: absolute;*/
-        padding: 7px;
-       
-      
-         box-shadow: 0 20px 20px -20px #333;
+        margin-top: 260px;
 
 
         @media (max-width: 1290px){
-            transform: scale(0.9);
-        
-        margin: 0 auto;
-        /*width: 270px;
-        height: 270px;
-        margin-top: 8%;
-        left: 40%;*/
-        
-      
-
-    }
-    @media (max-width: 960px){
-        transform: scale(0.6);
-        margin-top: -10px;
-        /*width: 200px;
-        height: 200px;
-        margin-top: 10%;*/
-        
-
-    }
-    @media (max-width: 760px){
-        transform: scale(0.5);
-        margin-top: -60px;
-       /* width: 150px;
-        height: 150px;
-        margin-top: 5%;
-        left: 30%;*/
-        
-
-    }
-    @media (max-width: 480px){
-        transform: scale(0.3);
-        margin-top: -100px;
-      /*  width: 120px;
-        height: 120px;
-       */
-
-    }
-    @media (max-width: 320px){
-        transform: scale(0.3);
-        margin-top: -110px;
-      
-     
-
-    }
-    
-
-    .sale_inside{
-        
-
-
-        border: 1px solid white;
-        width: 272px;
-        height: 272px;
-        font-family: 'Lato', sans-serif;
-        box-shadow: 0 20px 20px -20px #333;
-
-        /*@media (max-width: 1290px){
-            width: 270px;
-            height: 270px;
+           
+            transform: scale(0.8);
+            margin-top: 100px;
           
+ 
     
         }
         @media (max-width: 960px){
-            width: 198px;
-            height: 198px;
+            
+            transform: scale(0.5);
+            margin-top: 30px;
+         
+          
+          
+          
     
         }
         @media (max-width: 760px){
-            width: 148px;
-            height: 148px;
+            
+            transform: scale(0.4);
+            margin-top: -40px;
     
         }
         @media (max-width: 480px){
-            width: 118px;
-            height: 118px;
-    
-        }*/
-
-        .midseason{
-            @include flexbox;
-            @include justify-content(center);
-            @include align-items(center);
-            color: white;
-            font-size: 24px;
-            margin-top: 30px;
-
-            /*@media (max-width: 1290px){
-                font-size: 24px;
-                margin-top: 30px;
-              
+           
+            transform: scale(0.3);
+            margin-top: -100px;
         
-            }
-            @media (max-width: 960px){
-                font-size: 22px;
-                margin-top: 20px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 18px;
-                margin-top: 10px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 18px;
-            margin-top:     10px;
-        
-            }*/
         }
-        .sale_span{
-            @include flexbox;
-            @include justify-content(center);
-            @include align-items(center);
-            color: #000000;
-            font-size: 60px;
-            font-weight: bolder;
-            margin-top: 20px;
-
-            /*@media (max-width: 1290px){
-                font-size: 60px;
-                margin-top: 20px;
-              
-        
-            }
-            @media (max-width: 960px){
-                font-size: 40px;
-                margin-top: 15px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 25px;
-                margin-top: 15px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 20px;
-            margin-top:     10px;
-        
-            }*/
+        @media (max-width: 360px){
+           
+            transform: scale(0.3);
+            margin-top: -150px;
+     
         }
-        .upto{
+         
+
+
+        .text{
             @include flexbox;
             @include justify-content(center);
+        
             @include align-items(center);
-            color: white;
-            font-size: 24px;
-            margin-top: 30px;
-            position: relative;
-
-          /*  @media (max-width: 1290px){
-                font-size: 24px;
-                margin-top: 30px;
-              
-        
-            }
-            @media (max-width: 960px){
-                font-size: 20px;
-                margin-top: 15px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 18px;
-                margin-top: 10px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 18px;
-            margin-top:     10px;
-        
-            }*/
-
-            &::before{
+            @include flex-direction(column);
                 
-                content: "";
-                border-bottom: 2px solid white;
+
                
-                width: 60px;
-                height: 0.3em;
-                position: absolute;
-                top: calc(0.45em - 1px);
-                margin-left: -99px;
+        
+            .sale{
+
+                @include flexbox;
+                @include justify-content(center);
+                @include align-items(center);
+                margin: 0 auto;
+                width: 275px;
+                height: 275px;
+                border: 3px solid white;
+                padding: 7px;
+                box-shadow: 0 20px 20px -20px #333;
+
+
+                .sale_inside{
+
+                    border: 1px solid white;
+                    width: 272px;
+                    height: 272px;
+                    font-family: 'Lato', sans-serif;
+                    box-shadow: 0 20px 20px -20px #333;
+        
+               
+        
+                    .midseason{
+                        @include flexbox;
+                        @include justify-content(center);
+                         @include align-items(center);
+                        color: white;
+                        font-size: 24px;
+                        margin-top: 30px;
+
+                    }
+
+                    .sale_span{
+                        @include flexbox;
+                        @include justify-content(center);
+                        @include align-items(center);
+                     color: #000000;
+                        font-size: 60px;
+                        font-weight: bolder;
+                        margin-top: 20px;
+        
+                    }
+                    .upto{
+                        @include flexbox;
+                        @include justify-content(center);
+                            @include align-items(center);
+                        color: white;
+                        font-size: 24px;
+                        margin-top: 30px;
+                        position: relative;
+        
+                
+        
+                        &::before{
+                        
+                        content: "";
+                        border-bottom: 2px solid white;
+                       
+                        width: 60px;
+                        height: 0.3em;
+                        position: absolute;
+                        top: calc(0.45em - 1px);
+                        margin-left: -99px;
+                        }
+        
+                      
+        
+                        &::after{
+                        content: "";
+                        border-bottom: 2px solid white;
+                       
+                        width: 60px;
+                        height: 0.3em;
+                        position: absolute;
+                        top: calc(0.45em - 1px);
+                        margin-left: 99px;
+                        }
+                      
+                    
+                        hr{
+                        width: 30px;
+                        border: 1px solid white;
+                    
+                        }
+                    }
+        
+                    .off{
+                    @include flexbox;
+                    @include justify-content(center);
+                    @include align-items(center);
+                    color: #000000;
+                    font-size: 40px;
+                    margin-top: 25px;
+                    
+                    }
+
+                }
+        
+                  
+
+
+
+
+
+
+            }
+        }
+
+            .button {
+                @include flexbox;
+                @include justify-content(center);
+                @include align-items(center);
+                transition: 1s;
+                margin-top: 50px;
+            
+                height: 40px;
+                width: 175px;
+                text-shadow:2px 2px 4px rgba(0,0,0,1);
+                color: white;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                border-radius: 5%;
+                font-weight: bolder;
+                background: linear-gradient(#FB9575, #f09d66 48%, #f09d66 52%, #F02F17);
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    box-shadow: 0 20px 20px -20px #333;
+                }
+                &:hover{
+          
+                        transform: scale(1.02);
+                     transition: 1s;
+                 }
+                /* @media (max-width: 1290px){
+           
+                    transform: scale(0.8);
+                    margin-top: -5%;
+         
+            
+                }
+                @media (max-width: 960px){
+                    
+                    transform: scale(0.5);
+                    margin-top: -10%;
+                  
+                  
+                  
+            
+                }
+                @media (max-width: 760px){
+                    
+                    transform: scale(0.4);
+                    margin-top: -40%;
+                    
+                 
+                   
+            
+                }
+                @media (max-width: 480px){
+                   
+                    transform: scale(0.3);
+                    margin-top: -45%;
+                  
+                   
+                
+                }
+                @media (max-width: 360px){
+                   
+                    transform: scale(0.5);
+                    margin-top: 30%;
+                   
+                   
+                
+                }*/
+
+            }
+
+            .radio-slider-container {
+                @include flexbox;
+                @include justify-content(center);
+                @include align-items(center);
+                margin-top: 50px;
+               
+                color: #dbaf5d;
+                border: #dbaf5d;
 
                /* @media (max-width: 1290px){
-                    margin-left: -66px;
+           
+                    
+                    margin-top: 30px;
+         
             
                 }
                 @media (max-width: 960px){
-                    margin-left: -66px;
-            
-            
-                }
-                @media (max-width: 760px){
-                    display: none;
-            
-            
-                }
-                @media (max-width: 480px){
-                    display: none;
-            
-            
-                }*/
-
-            }
-
-            &::after{
-                content: "";
-                border-bottom: 2px solid white;
-               
-                width: 60px;
-                height: 0.3em;
-                position: absolute;
-                top: calc(0.45em - 1px);
-                margin-left: 99px;
-
-              /*  @media (max-width: 1290px){
-                    margin-left: 66px;
-            
-                }
-                @media (max-width: 960px){
-                    margin-left: 66px;
-            
+                    
+                  
+                    margin-top: 50px;
+                  
+                  
+                  
             
                 }
                 @media (max-width: 760px){
-                    display: none;
-            
+                    
+                   
+                    margin-top: -20px;
+                    
+                 
+                   
             
                 }
                 @media (max-width: 480px){
-                    display: none;
-            
-            
+                   
+                   
+                    margin-top: -45px;
+                  
+                   
+                
+                }
+                @media (max-width: 360px){
+                    margin-top: 10px;
+                   
+                  
+                   
+                   
+                   
+                
                 }*/
-            }
-            hr{
-                width: 30px;
-                border: 1px solid white;
+
             }
         }
 
-        .off{
-            @include flexbox;
-            @include justify-content(center);
-            @include align-items(center);
-            color: #000000;
-            font-size: 40px;
-            margin-top: 25px;
+          
 
-           /* @media (max-width: 1290px){
-                font-size: 40px;
-                margin-top: 25px;
-              
+
         
-            }
-            @media (max-width: 960px){
-                font-size: 35px;
-                margin-top: 20px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 30px;
-                margin-top: 20px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 15px;
-            margin-top:     10px;
-        
-            }*/
-        }
+
+
+
+
     }
 
 
-    
+
 }
-.button {
-        @include flexbox;
-        @include justify-content(center);
-        @include align-items(center);
-        @include flex-direction(column);
-        margin-top: 20px;
-
-        
-       
-        height: 40px;
-        width: 175px;
-        text-shadow:2px 2px 4px rgba(0,0,0,1);
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-size: 24px;
-        font-weight: bolder;
-        /*position: absolute;*/
-        align-items: center;
-        border-radius: 5%;
-        transition: 1s;
-        box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
-        background: linear-gradient(#FB9575, #f09d66 48%, #f09d66 52%, #F02F17);
-        text-decoration: none;
-        a{
-            text-decoration: none;
-            color: white;
-            box-shadow: 0 20px 20px -20px #333;
-        }
-
-    
-            
-
-             @media (max-width: 1290px){
-                transform: scale(0.8);
-                
-                
-              
-        
-            }
-            @media (max-width: 960px){
-                transform: scale(0.8);
-                margin-top: -20px;
-               
-
-                
-        
-            }
-            @media (max-width: 760px){
-                transform: scale(0.6);
-                margin-top: -70px;
-               
-             
-               
-        
-            }
-            @media (max-width: 480px){
-                transform: scale(0.4);
-                margin-top: -100px;
-              
-             
-
-            }
-            @media (max-width: 320px){
-                transform: scale(0.3);
-                margin-top: -100px;
-        
-
-            }
 
 
 
 
-        &:hover{
-          
-           transform: scale(1.02);
-            transition: 1s;
-        }
 
-        a{
-            text-decoration: none;
-            color: white;
-            box-shadow: 0 20px 20px -20px #333;
-        }
 
-        
-    }
-    
-    .radio-slider-container {
-        @include flexbox;
-        @include justify-content(center);
-        @include align-items(center);
-      
-        color: #dbaf5d;
-        border: #dbaf5d;
-
-        @media (max-width: 1290px){
-            
-          
-        }
-        @media (max-width: 960px){
-          
-           
-            
-    
-        }
-        @media (max-width: 760px){
-            margin-top: -30px;
-         
-           
-    
-        }
-        @media (max-width: 480px){
-            display: none;
-         
-    
-        }
-    }
-}
 
 .advert {
     @include flexbox;
@@ -1104,7 +879,7 @@ a{
             content: "";
             position: absolute;
             z-index: 2;
-            right: -40px;
+            right: -37px;
             width: 0;
             height: 0;
             border-style: solid;
@@ -1116,7 +891,7 @@ a{
             position: absolute;
             color: white;
             margin-left: 100px;
-            font-size: 30px;
+            font-size: 20px;
             margin-top: 20px;
             font-family: 'Lato', sans-serif;
 
@@ -1193,11 +968,12 @@ a{
         border-style: solid;
         border-width: 50px 0 50px 40px;
         border-color: transparent transparent transparent #ffffff;
+        left: -2px;
     }
         &::after{
         content: "";
         position: absolute;
-        right: 0;
+        right: -2px;
         width: 0;
         height: 0;
         border-style: solid;
@@ -1210,7 +986,7 @@ a{
             position: absolute;
             color: white;
             margin-left: 115px;
-            font-size: 30px;
+            font-size: 20px;
             margin-top: 20px;
             font-family: 'Lato', sans-serif;
             
@@ -1291,7 +1067,7 @@ a{
 
         &::before{
         content: "";
-        left: -40px;
+        left: -37px;
         position: absolute;
         width: 0;
         height: 0;
@@ -1303,7 +1079,7 @@ a{
             position: absolute;
             color: white;
             margin-left: 100px;
-            font-size: 30px;
+            font-size: 20px;
             margin-top: 20px;
             font-family: 'Lato', sans-serif;
 
