@@ -697,48 +697,7 @@ a{
                         transform: scale(1.02);
                      transition: 1s;
                  }
-                /* @media (max-width: 1290px){
-           
-                    transform: scale(0.8);
-                    margin-top: -5%;
-         
-            
-                }
-                @media (max-width: 960px){
-                    
-                    transform: scale(0.5);
-                    margin-top: -10%;
-                  
-                  
-                  
-            
-                }
-                @media (max-width: 760px){
-                    
-                    transform: scale(0.4);
-                    margin-top: -40%;
-                    
-                 
-                   
-            
-                }
-                @media (max-width: 480px){
-                   
-                    transform: scale(0.3);
-                    margin-top: -45%;
-                  
-                   
-                
-                }
-                @media (max-width: 360px){
-                   
-                    transform: scale(0.5);
-                    margin-top: 30%;
-                   
-                   
-                
-                }*/
-
+               
             }
 
             .radio-slider-container {
@@ -750,48 +709,7 @@ a{
                 color: #dbaf5d;
                 border: #dbaf5d;
 
-               /* @media (max-width: 1290px){
-           
-                    
-                    margin-top: 30px;
-         
-            
-                }
-                @media (max-width: 960px){
-                    
-                  
-                    margin-top: 50px;
-                  
-                  
-                  
-            
-                }
-                @media (max-width: 760px){
-                    
-                   
-                    margin-top: -20px;
-                    
-                 
-                   
-            
-                }
-                @media (max-width: 480px){
-                   
-                   
-                    margin-top: -45px;
-                  
-                   
-                
-                }
-                @media (max-width: 360px){
-                    margin-top: 10px;
-                   
-                  
-                   
-                   
-                   
-                
-                }*/
+             
 
             }
         }
@@ -819,15 +737,16 @@ a{
 .advert {
     @include flexbox;
     @include justify-content(space-between);
+    margin-top: -5%;
 
     @media (max-width: 1290px){
-        margin-top: 0 auto;
+        margin-top: -5%;
         
       
 
     }
     @media (max-width: 960px){
-        margin-top: 0 auto;
+        margin-top: -5%;
         
 
     }
@@ -985,7 +904,7 @@ a{
         .middle-info {
             position: absolute;
             color: white;
-            margin-left: 115px;
+            margin-left: 90px;
             font-size: 20px;
             margin-top: 20px;
             font-family: 'Lato', sans-serif;

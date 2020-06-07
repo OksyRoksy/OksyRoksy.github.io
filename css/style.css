@@ -874,47 +874,6 @@ a {
   font-weight: bolder;
   background: -webkit-gradient(linear, left top, left bottom, from(#FB9575), color-stop(48%, #f09d66), color-stop(52%, #f09d66), to(#F02F17));
   background: linear-gradient(#FB9575, #f09d66 48%, #f09d66 52%, #F02F17);
-  /* @media (max-width: 1290px){
-           
-                    transform: scale(0.8);
-                    margin-top: -5%;
-         
-            
-                }
-                @media (max-width: 960px){
-                    
-                    transform: scale(0.5);
-                    margin-top: -10%;
-                  
-                  
-                  
-            
-                }
-                @media (max-width: 760px){
-                    
-                    transform: scale(0.4);
-                    margin-top: -40%;
-                    
-                 
-                   
-            
-                }
-                @media (max-width: 480px){
-                   
-                    transform: scale(0.3);
-                    margin-top: -45%;
-                  
-                   
-                
-                }
-                @media (max-width: 360px){
-                   
-                    transform: scale(0.5);
-                    margin-top: 30%;
-                   
-                   
-                
-                }*/
 }
 
 .main-baner .baner .main-information .button a {
@@ -948,48 +907,6 @@ a {
   margin-top: 50px;
   color: #dbaf5d;
   border: #dbaf5d;
-  /* @media (max-width: 1290px){
-           
-                    
-                    margin-top: 30px;
-         
-            
-                }
-                @media (max-width: 960px){
-                    
-                  
-                    margin-top: 50px;
-                  
-                  
-                  
-            
-                }
-                @media (max-width: 760px){
-                    
-                   
-                    margin-top: -20px;
-                    
-                 
-                   
-            
-                }
-                @media (max-width: 480px){
-                   
-                   
-                    margin-top: -45px;
-                  
-                   
-                
-                }
-                @media (max-width: 360px){
-                    margin-top: 10px;
-                   
-                  
-                   
-                   
-                   
-                
-                }*/
 }
 
 .advert {
@@ -1001,17 +918,18 @@ a {
   -webkit-box-pack: justify;
           justify-content: space-between;
   -ms-flex-pack: space-between;
+  margin-top: -5%;
 }
 
 @media (max-width: 1290px) {
   .advert {
-    margin-top: 0 auto;
+    margin-top: -5%;
   }
 }
 
 @media (max-width: 960px) {
   .advert {
-    margin-top: 0 auto;
+    margin-top: -5%;
   }
 }
 
@@ -1161,7 +1079,7 @@ a {
 .advert .middle-adv .middle-info {
   position: absolute;
   color: white;
-  margin-left: 115px;
+  margin-left: 90px;
   font-size: 20px;
   margin-top: 20px;
   font-family: 'Lato', sans-serif;
