@@ -1094,7 +1094,7 @@ a {
 .advert .middle-adv .middle-info::before {
   content: url(../images/clock.png);
   position: absolute;
-  left: -60px;
+  left: -50px;
   margin-top: 5px;
 }
 
@@ -1309,19 +1309,6 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   position: relative;
-  /*a:hover:before,
-        a:hover:after,
-        .add:hover { 
-            opacity: 1; 
-            transition: 1s;
-            border-bottom: 60px solid #f0975c;
-        }*/
-  /* a:hover:before,
-        a:hover:after { 
-            opacity: 1; 
-            transition: 1s;
-            
-        }*/
 }
 
 .content .image:hover a:after, .content .image:hover a:before {
@@ -1429,30 +1416,6 @@ a {
   z-index: 2;
   left: 10%;
   top: 82.5%;
-  /* &::after{
-            content: "";
-            color: white;
-            font-family: 'Lato', sans-serif;
-            text-decoration: none;
-            position: absolute;
-            border-bottom: 60px solid rgb(230, 20, 20);
-            opacity: 80%;
-            border-left: 45px solid transparent;
-            border-right: 45px solid transparent;
-            height: 0;
-            width: 150px;
-            z-index: 4;
-            left: -30%;
-            top: 82%;
-            }*/
-  /* &:active{
-                border-bottom: 60px solid #f0975c;
-
-            }
-            &:hover{
-                border-bottom: 60px solid #f0975c;
-
-            }*/
 }
 
 .content .image .add span {
