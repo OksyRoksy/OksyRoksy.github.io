@@ -646,6 +646,9 @@ a {
 }
 
 .modal #closeBtn {
+  position: absolute;
+  right: 25px;
+  top: 5px;
   cursor: pointer;
   margin-top: 15px;
   padding: 2px 7px;

@@ -26,11 +26,15 @@
         BtnShowModal.addEventListener('click', function(){
             modal.style.display = 'block';
             shadow.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+
             
         });
         btnClose.addEventListener('click', function(){
             modal.style.display = 'none';
             shadow.style.display = 'none';
+            document.body.style.overflow = 'unset';
+
         } );
 
             $(document).ready(function(){

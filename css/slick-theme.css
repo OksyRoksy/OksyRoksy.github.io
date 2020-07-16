@@ -67,7 +67,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 70px;
     line-height: 1;
 
     opacity: .75;
@@ -79,38 +79,38 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -50px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -50px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '\2039';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '\2039';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -50px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -50px;
 }
 .slick-next:before
 {
-    content: '→';
+    content: '\203a';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '\203a';
 }
 
 /* Dots */
