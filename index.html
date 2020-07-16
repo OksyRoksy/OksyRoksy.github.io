@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Shophia</title>
+    
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+  
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script> 
+   
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
     <header>
+        <div class="shadow"></div>
         <div class="small-header">
             <div class="wrapper">
                 <div class="top-header">
@@ -31,6 +39,15 @@
 
         <div class="big-header">
             <div class="wrapper">
+                <div class="modal">
+                    <form action="">
+                    <p>SIGN IN</p>
+                    <input type="text"  placeholder=" username " name="sec_name" value="" required/>
+                    <input type="password" maxlength="25" name="password" placeholder=" password " value="" required/>
+                    <button id='closeBtn'>X</button>
+                    <input type="submit" class="button" name="submit" value="SIGN IN"/>
+                    </form>
+                </div>
                 <div class="bottom-header">
                     <ul class="main-menu">
                         <li><a href="#">Home</a></li>
@@ -61,12 +78,29 @@
         </div>
     </header>
     <main>
-        <div class="main-baner">
+        <div class="big_banner">
+            
             <div class="wrapper">
-                <div class="baner">
-                    <div class="triangle"></div>
-                    <div class="main-information">
-                        <div class="text">
+                
+                    <div class="slider">
+                        <div>
+                            <img src="./images/slide.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/slide1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/slide2.jpg" alt="">  
+                        </div>
+                        <div>
+                            <img src="./images/slide3.jpg" alt="">  
+                        </div>
+                        <div>
+                            <img src="./images/slide4.jpg" alt="">  
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <div class="sale_informations">
                             <div class="sale">
                                 <div class="sale_inside">
                                     <div class="midseason">MID-SEASON</div>
@@ -75,28 +109,21 @@
                                     <div class="off">50% OFF</div>
                                 </div>
                             </div>
-
-                        </div>
-                        <a href="#">
+                            <a href="#">
                             <div class="button">SHOP NOW</div>
                             </a>
-                            <div class="radio-slider-container">
-                                <input type="radio" name="radio" value="" id="radio1">
-                                <input type="radio" name="radio" value="" id="radio2">
-                                <input type="radio" name="radio" value="" id="radio3">
-                    
-                            </div>
                         </div>
-                </div>
-            </div>
+                    
+                    </div>    
+                </div>       
         </div>
-    <div class="wrapper">
-        <div class="advert">
-            <div class="left-adv">
-                <div class="left-info">
-                    <h4> FREE SHIPPING</h4>
-                    <span>In order min 200$</span>
-                </div>
+        <div class="wrapper">
+            <div class="advert">
+                <div class="left-adv">
+                    <div class="left-info">
+                        <h4> FREE SHIPPING</h4>
+                        <span>In order min 200$</span>
+                    </div>
             </div>
             <div class="middle-adv">
                 <div class="middle-info">
@@ -238,7 +265,7 @@
                     <span> &#169; 2015 Shophia Fashion Store Shopify</span><br>
                     <span>All Rights Reserved. Eccomerce Software by Shopify </span><br>
                     <span>Designed by MoccaLabs.com</span>
-                    <a class="up" href="#"><span><i class="fas fa-chevron-up"></i></span></a>
+                    <!-- <a class="up" href="#"><span><i class="fas fa-chevron-up"></i></span></a> -->
                 </div>
                 <div class="cards">
                     <ul>
@@ -248,10 +275,47 @@
                         <li><a href="#"><i class="fab fa-cc-amex"></i></a></li>
                     </ul>
                 </div>
+                
 
             </div>
         </div>
     </footer>
+    <!-- <script type="text/javascript">
+        /* //   9. сделать кнопку toTop без html, только с использованием js */
+    
+                function checkDistance() {
+                    if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                        btn.style.display = 'block';
+                    } else {
+                        btn.style.display = 'none';
+                    }
+                }
+    
+                function scrollToTop() {
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                }
+    
+                var btn = document.createElement('button');
+                btn.id = 'toTop';
+                btn.innerText = '  ';
+                btn.onclick = scrollToTop;
+                window.onscroll = checkDistance;
+                document.body.appendChild(btn);
+    
+        </script> -->
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="./slick/slick.min.js"></script>
+        <script src="./script.js"></script>
+        <!-- <script type="text/javascript"> -->
+            <!-- // $(document).ready(function(){
+            //   $('.slider').slick({
+            //     autoplay: false,
+            //     dots: true
+            //   });
+            // }); -->
+          <!-- </script> -->
     
 </body>
 </html>
