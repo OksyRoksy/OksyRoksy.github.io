@@ -856,27 +856,6 @@ a {
   color: white;
   font-size: 24px;
   margin-top: 30px;
-  /*@media (max-width: 1290px){
-                font-size: 24px;
-                margin-top: 30px;
-              
-        
-            }
-            @media (max-width: 960px){
-                font-size: 22px;
-                margin-top: 20px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 18px;
-                margin-top: 10px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 18px;
-            margin-top:     10px;
-        
-            }*/
 }
 
 .sale_informations .sale .sale_inside .sale_span {
@@ -897,27 +876,6 @@ a {
   font-size: 60px;
   font-weight: bolder;
   margin-top: 20px;
-  /*@media (max-width: 1290px){
-                font-size: 60px;
-                margin-top: 20px;
-              
-        
-            }
-            @media (max-width: 960px){
-                font-size: 40px;
-                margin-top: 15px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 25px;
-                margin-top: 15px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 20px;
-            margin-top:     10px;
-        
-            }*/
 }
 
 .sale_informations .sale .sale_inside .upto {
@@ -938,27 +896,6 @@ a {
   font-size: 24px;
   margin-top: 30px;
   position: relative;
-  /*  @media (max-width: 1290px){
-                font-size: 24px;
-                margin-top: 30px;
-              
-        
-            }
-            @media (max-width: 960px){
-                font-size: 20px;
-                margin-top: 15px;
-        
-            }
-            @media (max-width: 760px){
-                font-size: 18px;
-                margin-top: 10px;
-        
-            }
-            @media (max-width: 480px){
-                font-size: 18px;
-            margin-top:     10px;
-        
-            }*/
 }
 
 .sale_informations .sale .sale_inside .upto::before {
@@ -969,25 +906,6 @@ a {
   position: absolute;
   top: calc(0.45em - 1px);
   margin-left: -200px;
-  /* @media (max-width: 1290px){
-                    margin-left: -66px;
-            
-                }
-                @media (max-width: 960px){
-                    margin-left: -66px;
-            
-            
-                }
-                @media (max-width: 760px){
-                    display: none;
-            
-            
-                }
-                @media (max-width: 480px){
-                    display: none;
-            
-            
-                }*/
 }
 
 .sale_informations .sale .sale_inside .upto::after {
@@ -998,25 +916,6 @@ a {
   position: absolute;
   top: calc(0.45em - 1px);
   margin-left: 200px;
-  /*  @media (max-width: 1290px){
-                    margin-left: 66px;
-            
-                }
-                @media (max-width: 960px){
-                    margin-left: 66px;
-            
-            
-                }
-                @media (max-width: 760px){
-                    display: none;
-            
-            
-                }
-                @media (max-width: 480px){
-                    display: none;
-            
-            
-                }*/
 }
 
 .sale_informations .sale .sale_inside .upto hr {
@@ -1647,19 +1546,6 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   position: relative;
-  /*a:hover:before,
-        a:hover:after,
-        .add:hover { 
-            opacity: 1; 
-            transition: 1s;
-            border-bottom: 60px solid #f0975c;
-        }*/
-  /* a:hover:before,
-        a:hover:after { 
-            opacity: 1; 
-            transition: 1s;
-            
-        }*/
 }
 
 .content .image:hover a:after, .content .image:hover a:before {
@@ -2020,27 +1906,6 @@ footer .top-footer .connected .subscribe {
   min-height: 40px;
   border: 1px solid #484848;
   padding: 3px;
-  /*@media (max-width: 1290px){
-                    font-size: 40px;
-                    margin-top: 25px;
-                  
-            
-                }
-                @media (max-width: 960px){
-                    font-size: 35px;
-                    margin-top: 20px;
-            
-                }
-                @media (max-width: 760px){
-                    font-size: 30px;
-                    margin-top: 20px;
-            
-                }
-                @media (max-width: 480px){
-                    font-size: 25px;
-                margin-top:     20px;
-            
-                }*/
 }
 
 footer .top-footer .connected .subscribe .text {
@@ -2072,16 +1937,29 @@ footer .top-footer span {
 }
 
 #toTop {
+  width: 30px;
+  height: 30px;
   display: none;
   position: fixed;
-  padding: 10px;
+  padding: 5px;
   border: 1 px solid black;
   border-radius: 5px;
   right: 70px;
   bottom: 110px;
   background: black;
+  opacity: 50%;
+  z-index: 8;
   color: blanchedalmond;
   cursor: pointer;
+}
+
+#toTop::after {
+  content: "\25b2";
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: auto;
+  font-size: 1em;
+  color: #fff;
 }
 
 .cards {

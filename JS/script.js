@@ -12,7 +12,7 @@
 
         var btn = document.createElement('button');
         btn.id = 'toTop';
-        btn.innerText = ' TOP ';
+        // btn.innerText = ' TOP ';
         btn.onclick = scrollToTop;
         window.onscroll = checkDistance;
         document.body.appendChild(btn);
