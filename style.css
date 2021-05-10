@@ -20,7 +20,7 @@ ul {
     list-style: none;
   }
 li:hover {
-   border-left:2px solid #575554;
+   border-left:2px solid #fcfbfa;
 }
 a {
     text-decoration: none;
