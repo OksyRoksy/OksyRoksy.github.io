@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Wikipedia Viewer</h1>
-            <div class="imageWiki">
-                <a href="https://en.wikipedia.org/wiki/Special:Random" class="imageWiki" target="_blank">
-                <img src="./1200px-Wikipedia-logo-v2-en.svg.png" alt="">
-            </a>
-            </div>  
-        <div class="formInput">
-            <input class="searcher" id="searcher">
-            <button id="searchBtn" type="button" class="btnSearch">Submit</button>
-        </div>
-            <ul id="output">
-            </ul>
+  <main>
+    <header class="header">
+      <h1>Wikipedia Viewer</h1>
+      <a href="https://en.wikipedia.org/wiki/Special:Random" class="imageWiki" target="_blank">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/657px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" />
+      </a>
+      <form class="search-form js-search-form">
+        <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input js-search-input" autofocus />
+      </form>
+    </header>
+    <div class="loading">
+      <div class="sk-chase js-spinner hidden">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
     </div>
+    <section class="search-results js-search-results"></section>
+  </main>
 </body>
+<script src="./skript.js"></script>   
 </html>
